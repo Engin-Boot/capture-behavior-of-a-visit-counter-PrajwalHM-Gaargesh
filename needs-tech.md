@@ -9,6 +9,9 @@ that runs the visit-counter
 
 Scenario: Reconcile counts if the sensor is offline for a while
 
-  Given
-  When
-  Then
+  Given if the sensor is off for a while
+
+  When Patients visit the Hospital
+
+  Then count the patients using the entry card issuer
+  facility and update the count later.
